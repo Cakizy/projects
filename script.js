@@ -39,7 +39,7 @@ async function getQuote() {
         quoteText.innerText = data.quoteText;
         removeLoadingSpinners();
     } catch (error) {
-        getQuote();
+        // getQuote();
     }
 }
 // Tweet Quote
