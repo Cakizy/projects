@@ -37,8 +37,8 @@ async function getQuote() {
         removeLoadingSpinners();
     } catch (error) {
         removeLoadingSpinners();
-        quoteText.innerHTML = "What you are is what you have been. What you'll be is what you do now.";
-        authorText.innerText = "Buddha";
+        quoteText.innerHTML = "Woops, something went wrong :(! Get quote again :D";
+        authorText.innerText = "";
         // getQuote();
     }
 }
