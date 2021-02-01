@@ -20,13 +20,10 @@ function removeLoadingSpinners() {
 // Get Quote From API
 async function getQuote() {
     ShowLoadingSpinner();
-    // Proxy for Api not work anymore :/
-    // const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
     try {
-        // Proxy for Api not work anymore :/
-        // const response = await fetch(prox5yUrl + apiUrl);
-        const response = await fetch(apiUrl);
+        const response = await fetch(proxyUrl + apiUrl);
         const data = await response.json();
         // If Author is blank, add "Unknown"
         authorText.innerText = data.quoteAuthor? data.quoteAuthor: "Unknown";
